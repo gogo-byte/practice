@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int i , MAX = 0 , arr[5] , MIN ;
+    cout << " Enter 5 array elements ";
+    for (i = 0; i < 5; i++){
+        cin >> arr[i];
+        }
+    for (i = 0; i < 5; i++){
+        while (arr[i] > MAX){
+            MAX = arr[i];
+    }
+        if (arr[i+1] < arr[i])
+            MIN = arr[i+1];
+        else
+            MIN == arr[i];
+
+        }
+    cout << "Maximum for array is : " << MAX << endl;
+    cout << "Minimum for array is : " << MIN << endl;
+
+}
+
+
