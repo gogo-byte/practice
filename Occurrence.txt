@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int  arr[7] , i , count = 0 , num ;
+    cout << "Enter 7 elements in array : ";
+    for (i = 0; i < 7; i++){
+        cin >> arr[i];
+    }
+    cout << "Find occurrence for : ";
+    cin >> num;
+    for (i = 0; i < 7; i++){
+        if (arr[i] == num)
+            count++;
+
+    }
+    cout << "Occurence for "<< num << " is " << count;
+}
