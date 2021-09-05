@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+string mul(string s1, string s2, string s3)
+{
+    int n = s1.length() - 1, j,i;
+    long long int output = 0;
+    for(int i = 0; i < s1.length(); i++){
+        output += (stoi(s2)) * (s1[i] - '0') * pow(10, n-i);
+    }
+    cout << output << endl;
+    string str;
+    str = to_string(output);
+    for(i = 0; i < s3.length(); i++){
+        if(str[i] != s3[i]){
+            cout << "value for x is : "<< str[i];
+
+        }
+
+    }
+    return "blank";
+}
+int main(){
+    string s = mul("9", "8", "7x");
+}
+
+
+
